@@ -32,7 +32,7 @@ const config: webpack.Configuration = {
                 type: 'asset/inline'
             },
             {
-                test: /\.(glsl|frag|vect)$/,
+                test: /\.(glsl|frag|vert)$/,
                 type: 'asset/source'
             }
         ]

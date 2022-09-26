@@ -19,7 +19,7 @@ declare module "*.glsl" {
     export default content;
 }
 
-declare module "*.vect" {
+declare module "*.vert" {
     const content: string;
     export default content;
 }
