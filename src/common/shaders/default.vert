@@ -3,6 +3,7 @@
 uniform mat4 uModelMatrix;
 uniform mat4 uViewMatrix;
 uniform mat4 uProjectionMatrix;
+uniform mat4 uPerspectiveMatrix;
 
 in vec4 a_position;
 in vec4 a_color;
@@ -13,5 +14,5 @@ void main() {
 
   v_color = a_color;
 
-  gl_Position = uProjectionMatrix * uViewMatrix * uModelMatrix * a_position;
+  gl_Position = uProjectionMatrix * uPerspectiveMatrix * uViewMatrix * uModelMatrix * a_position;
 }
